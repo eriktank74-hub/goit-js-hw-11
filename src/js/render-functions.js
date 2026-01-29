@@ -46,7 +46,7 @@ export default {
             </li>
         `;
     });
-    const gallery = document.querySelector('.gallery-container');
+    const gallery = document.querySelector('.gallery');
     gallery.innerHTML = iamgesMarkup.join('');
 
     const galleryItems = document.querySelectorAll('.gallery-item');
@@ -65,15 +65,15 @@ export default {
     });
   },
   clearGallery: () => {
-    const gallery = document.querySelector('.gallery-container');
+    const gallery = document.querySelector('.gallery');
     gallery.innerHTML = '';
   },
   showLoader: () => {
-    const gallery = document.querySelector('.gallery-container');
+    const gallery = document.querySelector('.gallery');
     gallery.innerHTML = '<span class="loader"></span>';
   },
   hideLoader: () => {
-    const gallery = document.querySelector('.gallery-container');
+    const gallery = document.querySelector('.gallery');
     gallery.innerHTML = '';
   },
 };

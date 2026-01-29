@@ -58,7 +58,7 @@
   background-color: #6c8cff;
 }
 
-.gallery-container {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
