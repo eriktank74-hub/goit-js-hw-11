@@ -5,6 +5,11 @@ import renderFunctions from './js/render-functions';
 
 import 'izitoast/dist/css/iziToast.min.css';
 
+const form = document.querySelector('.form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+});
+
 const searchButton = document.querySelector('.form-button');
 searchButton.addEventListener('click', () => {
   renderFunctions.clearGallery();
