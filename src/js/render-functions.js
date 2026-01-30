@@ -69,11 +69,11 @@ export default {
     gallery.innerHTML = '';
   },
   showLoader: () => {
-    const gallery = document.querySelector('.gallery');
-    gallery.innerHTML = '<span class="loader"></span>';
+    const loader = document.querySelector('.loader');
+    loader.classList.add('visible');
   },
   hideLoader: () => {
-    const gallery = document.querySelector('.gallery');
-    gallery.innerHTML = '';
+    const loader = document.querySelector('.loader');
+    loader.classList.remove('visible');
   },
 };

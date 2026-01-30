@@ -8,7 +8,7 @@
 @import url('./reset.css');
 @import url('./base.css');
 
-.form-container {
+.form {
   margin-top: 40px;
   gap: 8px;
   display: flex;
@@ -106,6 +106,15 @@
   letter-spacing: 4%;
   color: #2e2f42;
 }
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+}
+
+.visible {
+  visibility: visible !important;
+}
   
 .loader {
   width: 48px;
@@ -118,6 +127,7 @@
   position: relative;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
+  visibility: hidden;
 }
 .loader::after {
   content: '';
